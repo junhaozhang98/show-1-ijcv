@@ -4,11 +4,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Show-1: Marrying Pixel and Latent Diffusion Models for Text-to-Video Generation">
+    <meta name="description" content="">
     <meta name="generator" content="Hugo 0.115.4">
     <title>Show-1</title>
-
-    <link rel="icon" href="./assets/images/showlab.ico" type="image/x-icon">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
 
@@ -118,54 +116,353 @@
 
   <main>
 
-    <section class="text-center container min-vh-100">
+    <section class="text-center container">
 
         <div class="row py-5">
-            <div class="bg-video" id="bgvideocontainer">
-                <div class="vimeo_player_wrapper" style="position: absolute; z-index: 0; width: 100%; height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0.5;" data-vimeo-initialized="true">
-                  <div class="video-wrapper">
-                    <video id="bgvideo" muted autoplay="autoplay" loop="loop" src="./assets/videos/teaser.mp4" style="width: auto; height: 100%;"></video>
-                  </div>
-                </div>
-            </div>
-            
-            <div class="mx-auto" style="margin-top: 16%; filter: saturate(1); opacity: 0.90;">
+            <div class="mx-auto">
                 <h1 class="display-2 fw-bold title">
-                  <a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1: 
-                  <a class="display-4">Marrying Pixel and Latent Diffusion Models for Text-to-Video Generation</a>
+                  <a class="display-4">Show-1: Marrying Pixel and Latent Diffusion Models for Text-to-Video Generation</a>
                 </h1>
-                <p class="author-list">
-                    <a href='https://junhaozhang98.github.io/' target='_blank'>David Junhao Zhang<sup>*</sup></a>&emsp;
-                    <a href='https://zhangjiewu.github.io/' target='_blank'>Jay Zhangjie Wu<sup>*</sup></a>&emsp;
-                    <a href='https://jia-wei-liu.github.io/' target='_blank'>Jia-Wei Liu<sup>*</sup></a>
-                    <br>
-                    <a href='https://ruizhaocv.github.io/' target='_blank'>Rui Zhao<sup></sup></a>&emsp;
-                    <a href='https://siacorplab.nus.edu.sg/people/ran-lingmin/' target='_blank'>Lingmin Ran<sup></sup></a>&emsp;
-                    <a href='https://ycgu.site/' target='_blank'>Yuchao Gu<sup></sup></a>&emsp;
-                    <a href='https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en' target='_blank'>Difei Gao<sup></sup></a>&emsp;
-                    <a href='https://sites.google.com/view/showlab/home?authuser=0' target='_blank'>Mike Zheng Shou<sup>&#x2709</sup></a>
-                </p>
-                <p class="institution-list">
-                    <a href='https://sites.google.com/view/showlab/home?authuser=0' target='_blank'>Show Lab, National University of Singapore</a>
-                    <br>
-                    <small><sup>*</sup> Equal Contribution</small>&emsp;
-                    <small><sup>&#x2709</sup> Corresponding Author</small>
-                </p>
-                <p>
+              
                 
-                <a href="https://github.com/showlab/Show-1" class="btn btn-outline-light">
-                    Code
-                </a>
-                <a href="https://arxiv.org/abs/2309.15818" class="btn btn-outline-light">
-                    arXiv
-                </a>
-                <a href="https://showlab.github.io/Show-1/assets/Show-1.pdf" class="btn btn-outline-light">
-                    PDF
-                </a>
-                </p>
             </div>
         </div>
     </section>
+
+    <div id="myCarousel" class="carousel slide py-5" data-bs-ride="carousel">
+
+      <h1>Comparison</h1>
+      </br>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/06.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/06.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/06.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/06.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+
+              </br>
+              <h2 style="font-style: italic;">A panda besides the waterfall is holding a sign that says <a class="text-highlight"> 'CVPR' </a>.</h2>
+
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+
+              </br>
+              <h2 style="font-style: italic;">A <a class="text-highlight">blue tiger</a> in the grass in the sunset, <a class="text-highlight">surrounded by butterflies</a>.</h2>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+              
+              </br>
+              <h2 style="font-style: italic;">A <a class="text-highlight">burning lamborghini</a> driving <a class="text-highlight">on rainbow</a>.</h2>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/04.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+              
+              </br>
+              <h2 style="font-style: italic;"><a class="text-highlight">Snail</a> slowly creeping along <a class="text-highlight">super macro close-up</a>, high resolution, best quality.</h2>
+
+          </div>
+        </div>
+
+
+
+        <div class="carousel-item">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+              
+              </br>
+              <h2 style="font-style: italic;"><a class="text-highlight">A panda besides the waterfall is holding a sign that says <a class="text-highlight"> 'Show Lab'.</h2>
+
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="container">
+              <div class="row row-cols-md-4 g-4" id="video-container">
+                
+                <div class="col" style="width: 25%;">
+                  <h4><strong>Ours</strong></h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/show1/05.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>ModelScope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/ms/05.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Zeroscope</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/zs/05.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 25%;">
+                  <h4>Gen-2</h4>
+                  <div class="card hover-card">
+                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./assets/videos/comparison/gen2/05.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </div>
+              </div>
+              
+              </br>
+              <h2 style="font-style: italic;">Toad <a class="text-highlight">practicing karate</a>.</h2>
+
+          </div>
+        </div>
+
+      </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   
     <div class="album py-5 bg-body-tertiary">
       <div class="container">
@@ -181,6 +478,20 @@
                 <div class="hover-text">
                   <div class="card-body">
                     <h5 class="card-title">"Astronaut in a Jungle" by Syd Mead, cold color palette, muted colors, detailed.</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col" data-item>
+            <div class="card hover-card">
+                <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                  <source src="./assets/videos/gallery/33.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hover-text">
+                  <div class="card-body">
+                    <h5 class="card-title">"Harry Potter is lifting the barbell“</h5>
                   </div>
                 </div>
               </div>
@@ -222,7 +533,7 @@
                 </video>
                 <div class="hover-text">
                   <div class="card-body">
-                    <h5 class="card-title">A lion made entirely of autumn leaves.</h5>
+                    <h5 class="card-title">A lion made entirely of autumn leaves besides the lake.</h5>
                   </div>
                 </div>
               </div>
@@ -301,6 +612,21 @@
           <div class="col" data-item>
             <div class="card hover-card">
                 <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                  <source src="./assets/videos/gallery/32.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hover-text">
+                  <div class="card-body">
+                    <h5 class="card-title">Awolf drinking coffee and looking at big ships, there are seagulls flying over,.</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="col" data-item>
+            <div class="card hover-card">
+                <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
                   <source src="./assets/videos/gallery/10.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -312,6 +638,8 @@
               </div>
           </div>
 
+
+
           <div class="col" data-item>
             <div class="card hover-card">
                 <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
@@ -320,7 +648,7 @@
                 </video>
                 <div class="hover-text">
                   <div class="card-body">
-                    <h5 class="card-title">A panda besides the waterfall is holding a sign that says "Show Lab".</h5>
+                    <h5 class="card-title">A panda besides the waterfall is holding a sign that says "Show Lab"</h5>
                   </div>
                 </div>
               </div>
@@ -438,6 +766,7 @@
               </div>
           </div>
 
+
           <div class="col" data-item>
             <div class="card hover-card">
                 <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
@@ -447,6 +776,20 @@
                 <div class="hover-text">
                   <div class="card-body">
                     <h5 class="card-title">A panda besides the waterfall is holding a sign that says "Show 1".</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col" data-item>
+            <div class="card hover-card">
+                <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
+                  <source src="./assets/videos/gallery/31.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hover-text">
+                  <div class="card-body">
+                    <h5 class="card-title">A married couple embraces in front of a burning house.</h5>
                   </div>
                 </div>
               </div>
@@ -601,343 +944,9 @@
       </div>
     </div>
 
+    
 
-    <div class="album py-5 col-lg-5 mx-auto bg-dark">
-        <div class="container">
-            <h1>Abstract</h1>
-            </br>
-
-            <p style="text-align: justify;">
-              Significant advancements have been achieved in the realm of large-scale pre-trained text-to-video Diffusion Models (VDMs). 
-              However, previous methods either rely solely on pixel-based VDMs, which come with high computational costs, or on 
-              latent-based VDMs, which often struggle with precise text-video alignment. In this paper, we are the first to propose a 
-              hybrid model, dubbed as Show-1, which marries pixel-based and latent-based VDMs for text-to-video generation. Our model 
-              first uses pixel-based VDMs to produce a low-resolution video of strong text-video correlation. After that, we propose a 
-              novel expert translation method that employs the latent-based VDMs to further upsample the low-resolution video to high 
-              resolution. Compared to latent VDMs, Show-1 can produce high-quality videos of precise text-video alignment; Compared 
-              to pixel VDMs, Show-1 is much more efficient  (GPU memory usage during inference is 15G vs 72G). We also validate our model 
-              on standard video generation benchmarks. Our code and model weights are publicly available at 
-              <a href='https://github.com/showlab/Show-1' target='_blank'>https://github.com/showlab/Show-1</a>.
-            </p>
-        </div>
-    </div>
-
-    <div class="album py-5 bg-body-tertiary text-dark">
-      <div class="container col-lg-8 mx-auto">
-
-        <h1>Method</h1>
-        </br>
-        
-        <p style="text-align: justify;">
-          <strong>Pixel-based VDMs</strong> can generate motion accurately aligned with the textual prompt but 
-          typically demand expensive computational costs in terms of time and GPU memory, especially when 
-          generating high-resolution videos. <strong>Latent-based VDMs</strong> are more resource-efficient 
-          because they work in a reduced-dimension latent space.
-        </p>
-
-        <img src="./assets/images/intro.png" style="width: 100%;">
-        
-        <p style="text-align: justify;">
-          But it is challenging for such small latent space (e.g., 64×40 for 256×160 videos) to cover rich yet 
-          necessary visual semantic details as described by the textual prompt. Therefore, as shown in above figure, 
-          the generated videos often are not well-aligned with the textual prompts. On the other hand, if the 
-          generated videos are of relatively high resolution (e.g., 256×160 videos), the latent model will focus 
-          more on spatial appearance but may also ignore the text-video alignment.
-        </p>
-
-        <img src="./assets/images/method.png" style="width: 100%;">
-        <p style="text-align: justify;">
-          To marry the strength and alleviate the weakness of pixel-based and latent-based VDMs, we introduce 
-          <a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1, 
-          an efficient text-to-video model that generates videos of not only decent video-text alignment but also high visual quality. 
-        </p>
-        
-      </div>
-    </div>
-
-
-    <div id="myCarousel" class="carousel slide py-5" data-bs-ride="carousel">
-
-      <h1>Comparison</h1>
-      </br>
-
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
-      </div>
-      
-      <div class="carousel-inner">
-        
-        <div class="carousel-item active">
-          <div class="container">
-              <div class="row row-cols-md-4 g-4" id="video-container">
-                
-                <div class="col" style="width: 25%;">
-                  <h4><strong><a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1</strong></h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/show1/01.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>ModelScope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/ms/01.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Zeroscope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/zs/01.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Gen-2</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/gen2/01.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-              </div>
-
-              </br>
-              <h2 style="font-style: italic;">A <a class="text-highlight">blue tiger</a> in the grass in the sunset, <a class="text-highlight">surrounded by butterflies</a>.</h2>
-
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="container">
-              <div class="row row-cols-md-4 g-4" id="video-container">
-                
-                <div class="col" style="width: 25%;">
-                  <h4><strong><a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1</strong></h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/show1/02.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>ModelScope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/ms/02.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Zeroscope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/zs/02.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Gen-2</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/gen2/02.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-              </div>
-              
-              </br>
-              <h2 style="font-style: italic;">A <a class="text-highlight">burning lamborghini</a> driving <a class="text-highlight">on rainbow</a>.</h2>
-
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="container">
-              <div class="row row-cols-md-4 g-4" id="video-container">
-                
-                <div class="col" style="width: 25%;">
-                  <h4><strong><a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1</strong></h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/show1/03.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>ModelScope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/ms/03.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Zeroscope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/zs/03.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Gen-2</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/gen2/03.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-              </div>
-              
-              </br>
-              <h2 style="font-style: italic;">A panda besides the waterfall is holding <a class="text-highlight">a sign that says "Show Lab"</a>.</h2>
-
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="container">
-              <div class="row row-cols-md-4 g-4" id="video-container">
-                
-                <div class="col" style="width: 25%;">
-                  <h4><strong><a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1</strong></h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/show1/04.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>ModelScope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/ms/04.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Zeroscope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/zs/04.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Gen-2</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/gen2/04.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-              </div>
-              
-              </br>
-              <h2 style="font-style: italic;"><a class="text-highlight">Snail</a> slowly creeping along <a class="text-highlight">super macro close-up</a>, high resolution, best quality.</h2>
-
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="container">
-              <div class="row row-cols-md-4 g-4" id="video-container">
-                
-                <div class="col" style="width: 25%;">
-                  <h4><strong><a style="color: #70a8dc;">S</a><a style="color: #6fb051;">h</a><a style="color: #e06766;">o</a><a style="color: #f7b26b;">w</a>-1</strong></h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/show1/05.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>ModelScope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/ms/05.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Zeroscope</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/zs/05.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-
-                <div class="col" style="width: 25%;">
-                  <h4>Gen-2</h4>
-                  <div class="card hover-card">
-                      <video class="card-img-top card-img-bottom" muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./assets/videos/comparison/gen2/05.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                </div>
-              </div>
-              
-              </br>
-              <h2 style="font-style: italic;">Toad <a class="text-highlight">practicing karate</a>.</h2>
-
-          </div>
-        </div>
-
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+     
   
   </main>
 
@@ -946,10 +955,10 @@
     $(document).ready(function() {
         $('#loadMoreBtn').click(function() {
             const hiddenItems = $('[data-item]:hidden');
-            hiddenItems.slice(0, 6).fadeIn(); // Adjust this number to show more or fewer items
+            hiddenItems.slice(0, 30).fadeIn(); // Adjust this number to show more or fewer items
 
             // Optionally hide the "Load More" button if there are no more hidden items
-            if (hiddenItems.length <= 6) {
+            if (hiddenItems.length <= 30) {
                 $('#loadMoreBtn').fadeOut();
             }
         });
